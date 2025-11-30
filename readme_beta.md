@@ -1,39 +1,42 @@
 #  GNSS Basestation - RTKit
-<img width="510" height="183" alt="miner_ohneBG" src="https://github.com/user-attachments/assets/7aa2d497-d174-43aa-8f2b-47c93be2a783" />
 
 
-## with UM980 GNSS Module & Raspberry Pi Zero 2WH
 
-RTKit is a simple, affordable project for building your own GNSS (Global Navigation Satellite System) basestation using a Raspberry Pi Zero and UM980 board. It's ideal for RTK (Real-Time Kinematic) applications like precision surveying or navigation. This guide focuses on hardware assembly; software setup (e.g., using RTKLIB) is left to the user.
+## with GNSS Module & Single-Board Computer (SBC)
+
+RTKit is a straightforward, cost-effective project for building your own GNSS (Global Navigation Satellite System) base station using a single-board computer (SBC) and a high-precision GNSS module. It is designed for RTK (Real-Time Kinematic) applications, such as precision surveying, agriculture, or autonomous navigation.
+This guide covers hardware assembly and software configuration, using ELT_RTKBASE.
 
 <br>
 
 # 📄 Key Components
 
 
-- Raspberry Pi Zero 2 WH – where the "H" officially stands for "pre-soldered headers"  
-https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/
+- Raspberry Pi Zero 2 W (or WH – where the "H" officially stands for "pre-soldered headers", required if you plan to use active cooling with fans)  
+Example: https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/
 <img width="250" height="174" alt="RASP_PI_ZERO2_WH" src="https://github.com/user-attachments/assets/80a5c816-0b8b-43cc-b90f-1bcd15385148" />
 
 - Ethernet / USB HUB HAT <br>
-https://www.waveshare.com/product/raspberry-pi/hats/interface-power/eth-usb-hub-hat-b.htm?___SID=U  
+Example: https://www.waveshare.com/product/raspberry-pi/hats/interface-power/eth-usb-hub-hat-b.htm?___SID=U  
 <img width="250" height="172" alt="eth_hat" src="https://github.com/user-attachments/assets/4e4fce9b-29e2-4b4d-b333-94443c3f791a" />
 
-- UM980 GNSS Module<br>
-Example: https://witmotion-sensor.com ; https://www.gns-electronics.de/ ; https://aliexpress.com/ 
-<img width="184" height="250" alt="um980" src="https://github.com/user-attachments/assets/c81fc6bb-e565-4fdf-b510-cbfd57153f90" />
+
 
 - USB-A (Male) to USB-C (Male) OTG<br>
 Example: https://aliexpress.com/item/1005002301799896.html
 <img width="229" height="250" alt="usb otg" src="https://github.com/user-attachments/assets/11d13eb0-989e-42bb-b893-fa8c28c4eb26" />
 
+- Aluminum Heat Sink (Passive Cooling) <br>
+Example: https://aliexpress.com/item/1005003796537427.html
+<img width="220" height="119" alt="alu_cooling" src="https://github.com/user-attachments/assets/6523d167-d378-43c2-9a4d-ad2211fe6aa5" />
 
 - 2x Fan 30x30x08 5V/3V<br>
 Example: https://aliexpress.com/item/32813594463.html
+
 <img width="250" height="251" alt="fan" src="https://github.com/user-attachments/assets/6ebe6f5f-afcc-4d9b-934c-0be6bb307f4d" />
 
 - Raspberry Pi Micro USB Power Supply <br>
-https://www.raspberrypi.com/products/micro-usb-power-supply
+Example: https://www.raspberrypi.com/products/micro-usb-power-supply
 <img width="250" height="250" alt="microusb-51v-25a-netzteil-fur-raspberry-pi-3b-3a-3b-2b-zero-zero-2-original-weiss" src="https://github.com/user-attachments/assets/1b6409c5-2805-414e-88f5-0d3cbac5ee8e" />
 
 - MicroSD card (at least 8GB,max 32GB, Class 10 recommended)
@@ -41,6 +44,24 @@ https://www.raspberrypi.com/products/micro-usb-power-supply
 <br>
 
 - Enclosure/Case (user's choice—see optional section below)
+USB HUB BOX for Raspberry Pi Zero
+Example: https://www.waveshare.com/product/raspberry-pi/hats/interface-power/usb-hub-box.htm
+
+![usb-hub-box-1](https://github.com/user-attachments/assets/8298b05e-f19f-49a6-9e56-77bd25358317)
+
+
+
+
+# One of these GNSS modules
+
+- UM980 GNSS Module<br>
+Example: https://witmotion-sensor.com ; https://www.gns-electronics.de/ ; https://aliexpress.com/ 
+<img width="184" height="250" alt="um980" src="https://github.com/user-attachments/assets/c81fc6bb-e565-4fdf-b510-cbfd57153f90" />
+
+- mosaic-X5 RTK GNSS dongle<br>
+Example: [https://witmotion-sensor.com ; https://www.gns-electronics.de/ ; https://aliexpress.com/ ](https://gnss.store/en/septentrio-gnss-modules/356-elt0722.html)
+
+<img width="480" height="219" alt="elt0722" src="https://github.com/user-attachments/assets/68e4da10-c962-4722-997e-c8b09b112b49" />
 
 # To complete your setup, you will need the following components:
 
@@ -79,6 +100,7 @@ You can choose any suitable enclosure for your basestation—off-the-shelf water
 
 Here's an example of various enclosure options to inspire you:  
 <img width="1000" height="275" alt="coll" src="https://github.com/user-attachments/assets/96d59010-52d4-4a1a-acc0-da424a6dbc85" />
+![usb-hub-box-1](https://github.com/user-attachments/assets/c040ad8c-0890-4fdf-80f9-a54beb96bc83)
 
 
 *(Image shows a range of colorful, rugged cases suitable for electronics projects.)*
