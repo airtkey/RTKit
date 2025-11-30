@@ -91,7 +91,7 @@ If you decide to 3D print a case using the provided files:
 
 No 3D printer? Services like [Craftcloud3D](https://craftcloud3d.com/) can print and ship custom parts for you.
 
-### 2. Assemble the Main Board
+### 1. Assemble the Main Board
 ![main_board](https://github.com/user-attachments/assets/bd724068-8737-407b-b39b-44f12837400d)
 
 
@@ -119,16 +119,7 @@ Insert the SD card into your Raspberry Pi and power it up.
 Then connect using an SSH client like **PuTTY**:
 
 
-### 3. Update and Reboot
-
-Run the following commands:
-```bash
-sudo apt update && sudo apt upgrade -y && sudo reboot
-```
-
-
-
-### 5. Install the ELT_RTKBase Software
+### 3. Install the ELT_RTKBase Software
 
 Open a terminal (ssh with putty) on the Pi and run **two** times:
 ```bash
