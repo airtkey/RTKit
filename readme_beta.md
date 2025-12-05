@@ -4,46 +4,45 @@
 
 ## with GNSS Module & Single-Board Computer (SBC)
 
-RTKit is a straightforward, cost-effective project for building your own GNSS (Global Navigation Satellite System) base station using a single-board computer (SBC) and a high-precision GNSS module. It is designed for RTK (Real-Time Kinematic) applications, such as precision surveying, agriculture, or autonomous navigation.
-This guide covers hardware assembly and software configuration, using ELT_RTKBASE.
-
+RTKit is a straightforward, cost-effective project for building your own  **GNSS (Global Navigation Satellite System) base station**  using a single-board computer (SBC) and a high-precision GNSS module.<br>
+Powered by **ELT_RTKBase** – supports both modules out-of-the-box. Integrates seamlessly with **onocoy**.
 <br>
 
 # 📄 Key Components
 
 
-- Raspberry Pi Zero 2 W (or WH – where the "H" officially stands for "pre-soldered headers", required if you plan to use active cooling with fans)  
+- **Raspberry Pi Zero 2 W** (or WH – where the "H" officially stands for "pre-soldered headers", required if you plan to use active cooling with fans)  
 Example: https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/
 <img width="250" height="174" alt="RASP_PI_ZERO2_WH" src="https://github.com/user-attachments/assets/80a5c816-0b8b-43cc-b90f-1bcd15385148" />
 
-- Ethernet / USB HUB HAT <br>
+- **Ethernet / USB HUB HAT** <br>
 Example: https://www.waveshare.com/product/raspberry-pi/hats/interface-power/eth-usb-hub-hat-b.htm?___SID=U  
 <img width="250" height="172" alt="eth_hat" src="https://github.com/user-attachments/assets/4e4fce9b-29e2-4b4d-b333-94443c3f791a" />
 
 
 
-- USB-A (Male) to USB-C (Male) OTG<br>
+- **USB-A (Male) to USB-C (Male) OTG**<br>
 Example: https://aliexpress.com/item/1005002301799896.html
 <img width="229" height="250" alt="usb otg" src="https://github.com/user-attachments/assets/11d13eb0-989e-42bb-b893-fa8c28c4eb26" />
 
-- Aluminum Heat Sink (Passive Cooling) <br>
+- **Aluminum Heat Sink** (passive cooling) <br>
 Example: https://aliexpress.com/item/1005003796537427.html
 <img width="220" height="119" alt="alu_cooling" src="https://github.com/user-attachments/assets/6523d167-d378-43c2-9a4d-ad2211fe6aa5" />
 
-- 2x Fan 30x30x08 5V/3V<br>
+- **2x Fan 30x30x08 5V/3V** (fan-based cooling)<br>
 Example: https://aliexpress.com/item/32813594463.html
 
 <img width="250" height="251" alt="fan" src="https://github.com/user-attachments/assets/6ebe6f5f-afcc-4d9b-934c-0be6bb307f4d" />
 
-- Raspberry Pi Micro USB Power Supply <br>
+- **Raspberry Pi Micro USB Power Supply** <br>
 Example: https://www.raspberrypi.com/products/micro-usb-power-supply
 <img width="250" height="250" alt="microusb-51v-25a-netzteil-fur-raspberry-pi-3b-3a-3b-2b-zero-zero-2-original-weiss" src="https://github.com/user-attachments/assets/1b6409c5-2805-414e-88f5-0d3cbac5ee8e" />
 
-- MicroSD card (at least 8GB,max 32GB, Class 10 recommended)
+- **MicroSD card** (at least 8GB,max 32GB, Class 10 recommended)
 <img width="250" height="187" alt="sd_card" src="https://github.com/user-attachments/assets/3d729816-15c2-4d2f-ae81-a434106245fd" />
 <br>
 
-- Enclosure/Case (user's choice—see optional section below)
+- **Enclosure/Case** (user's choice—see optional section below)
 USB HUB BOX for Raspberry Pi Zero
 Example: https://www.waveshare.com/product/raspberry-pi/hats/interface-power/usb-hub-box.htm
 
@@ -62,6 +61,16 @@ Example: https://witmotion-sensor.com ; https://www.gns-electronics.de/ ; https:
 Example: [https://witmotion-sensor.com ; https://www.gns-electronics.de/ ; https://aliexpress.com/ ](https://gnss.store/en/septentrio-gnss-modules/356-elt0722.html)
 
 <img width="480" height="219" alt="elt0722" src="https://github.com/user-attachments/assets/68e4da10-c962-4722-997e-c8b09b112b49" />
+
+### GNSS Module Variants
+
+| Module          | Connection             | Enclosure Needs                  | Image/Link                                                                 | Notes                                      |
+|-----------------|------------------------|----------------------------------|----------------------------------------------------------------------------|--------------------------------------------|
+| **UM980**      | USB-A → USB-C OTG Adapter | Separate case (3D/custom)       | [![UM980](images/um980.png)](https://witmotion-sensor.com)                 | Compact board; needs mounting.             |
+| **Mosaic-X5**  | Direct USB Cable (A-Male) | Built-in housing; use ETH-USB-HUB-BOX | [![Mosaic-X5](images/elt0722.png)](https://www.gns-electronics.de/)<br>**(Bild kommt heute)** | Dongle-style; plug-and-play, weatherproof. |
+
+
+
 
 # To complete your setup, you will need the following components:
 
