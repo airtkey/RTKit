@@ -101,7 +101,7 @@ Choose any waterproof case for outdoor use. <br>
 6. **Antenna**: Route cable through gland → Screw TNC plug.
 7. **Cooling**: Apply heatsink or attach/connect fans (as chosen).
 
-![Inside View](images/insode.png)
+<img width="417" height="162" alt="insode" src="https://github.com/user-attachments/assets/d0f15523-a58e-4c8d-8413-0b1c4c0dbbf2" />
 
 ---
 
@@ -117,29 +117,8 @@ Choose any waterproof case for outdoor use. <br>
 
 ![Mosaic Setup](images/mosaic-x5-setup.png)
 
-<details>
-<summary>Full Pinout Reference</summary>
-| Pin | Function | Fan Wire |
-|-----|----------|----------|
-| 2/4 | 5V      | Red     |
-| 6   | GND     | Black   |
-| 12  | PWM     | Blue    |
-</details>
 
 
-
-- Assemble the Ethernet Hub and Raspberry Pi Zero: <br>
-Carefully connect the Ethernet hub and the Raspberry Pi Zero, referring to their respective manuals for detailed instructions.
-- Attach the USB-A to USB-C OTG Adapter:<br> Insert the USB-A to USB-C OTG adapter into the designated port on the right side of the Raspberry Pi Zero.
-- Connect the UM980 GNSS Board:<br> Attach the UM980 GNSS board to the USB-C OTG adapter.
-- Mount the Assembled Board: <br>Carefully place the fully assembled board into the case.
-- Secure the Board:<br> Use the provided screws to fix the board firmly to the case.
-- Install the Antenna Plug:<br> Guide the antenna plug through the designated hole in the case and secure it by screwing it into place.
-- Attach the Fans:<br> Slide the two fans into their designated slots on the lid of the case.
-- Connect the Fans:<br> Connect the fan cables to the appropriate GPIO pins on the Raspberry Pi Zero. ( https://github.com/airtkey/UM980-diy-/blob/main/pictures/raspberry-pi-zero-pinout.png )
-<img width="349" height="100" alt="fan_lid" src="https://github.com/user-attachments/assets/a89f288a-bcf6-4063-950f-05d9efbf2443" />
-<br>  
-<img width="417" height="162" alt="insode" src="https://github.com/user-attachments/assets/d0f15523-a58e-4c8d-8413-0b1c4c0dbbf2" />
 
 
 ### 1. Flash the OS
