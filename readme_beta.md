@@ -121,7 +121,7 @@ Choose any waterproof case for outdoor use. <br>
 
 
 
-### 1. Flash the OS
+# Flash the OS
 Download and flash **Raspberry Pi OS Lite (64-bit)** in the **Debian Bookworm** version to your microSD card using Raspberry Pi Imager. Enable SSH and Wi-Fi before proceeding. For more detailed information on flashing and setup, please refer to: https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-the-operating-system.
 
 ### 2. Connect via SSH
@@ -140,12 +140,19 @@ The script will install the required software and drivers, and start the dashboa
 
 💡 After installation, you can connect it to onocoy directly from the web dashboard.
 
+### Quick Start Guide (w/ Manual Refs)
+Manual Link:
+(https://github.com/GNSSOEM/ELT_RTKBase/blob/main/Doc/ELT_RTKBase_v1.8.1_EN.pdf)
+| Step  | Manual Page |
+|------|--------|
+| **Access to the dashboard** | Site 18 |
+| **Setup for onocoy stream** | Site 47 |
 
 
 ## 🔗 Related Links
 
-- [Onocoy Network](https://onocoy.com)
-- [UM980 Base Setup (ELT_RTKBase)](https://github.com/GNSSOEM/ELT_RTKBase)
+- [onocoy Network](https://onocoy.com)
+- [ELT_RTKBase](https://github.com/GNSSOEM/ELT_RTKBase)
 
 
 ## 📬 Contact
