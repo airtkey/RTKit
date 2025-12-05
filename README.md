@@ -106,7 +106,6 @@ Choose any waterproof case for outdoor use. <br>
 ---
 
 ### Variant 2: Mosaic-X5 GNSS (Dongle w/ USB-C Cable)
-**⚠️ Note**: Connect Mosaic-X5 **before** fresh OS install. Switching from UM980 requires full reinstall (Mosaic plugged in during setup).
 
 1. **Stack ETH-Hub on Pi Zero**: Follow Waveshare manual.
 2. **Connect Mosaic-X5**: USB-C cable → ETH-Hub USB port (dongle has housing).
@@ -115,6 +114,20 @@ Choose any waterproof case for outdoor use. <br>
 5. **Antenna**: Route through case gland → Screw to Mosaic.
 6. **Cooling**: Apply heatsink or attach/connect fans.
 
+   <br>
+**⚠️ Important Notes**: Mosaic-X5 Setup & Operation
+- **Pre-Installation Requirement**
+  Connect the **Mosaic-X5** **before** performing a fresh OS installation.
+  **Switching from UM980?** → A **full reinstallation** is required (ensure Mosaic is plugged in during setup).
+
+- **Startup/Reboot Behavior**
+  After power-up or reboot, the Mosaic-X5 requires **several minutes** to fully initialize.
+  **Operational status:** All **three LEDs** must be active.
+
+- **Troubleshooting: No Signals in Dashboard?**
+  Verify GNSS reception via the **Mosaic web server**:
+  1. Open **Settings** → Scroll to **GNSS Receiver Information** (bottom of the page).
+  2. Check signal status.
 <img alt="mosaicx5-station" src="https://github.com/airtkey/RTKit/blob/main/pictures/mosaic_stations.png">
 
 
