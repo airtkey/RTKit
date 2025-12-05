@@ -115,10 +115,10 @@ Choose any waterproof case for outdoor use. <br>
 5. **Antenna**: Route through case gland → Screw to Mosaic.
 6. **Cooling**: Apply heatsink or attach/connect fans.
 
-![Mosaic Setup](images/mosaic-x5-setup.png)
+<img alt="mosaicx5-station" src="https://github.com/airtkey/RTKit/blob/main/pictures/mosaic_stations.png">
 
 
-
+---
 
 
 # Flash the OS
