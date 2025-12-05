@@ -25,7 +25,7 @@ Powered by **ELT_RTKBase** – supports both modules out-of-the-box. Integrates 
 
 
 
-# One of these GNSS modules / GNSS Module Variants
+## One of these GNSS modules / GNSS Module Variants
 
 | Module          | Connection             | Enclosure Needs                  | Image                                                                 | Notes                                     |
 |---------------------|------------------------|----------------------------------|----------------------------------------------------------------------------|--------------------------------------------|
@@ -35,7 +35,7 @@ Powered by **ELT_RTKBase** – supports both modules out-of-the-box. Integrates 
 
 
 
-# To complete your setup, you will need the following components:
+## To complete your setup, you will need the following components:
 
 
 | Component          | Recommendation/Example                                                                 | Image/Link                                                                 | Notes                                                                 |
@@ -45,7 +45,7 @@ Powered by **ELT_RTKBase** – supports both modules out-of-the-box. Integrates 
 | **Mounting Bracket** | Pole mount                                                                             | [![Bracket](https://github.com/user-attachments/assets/06ec4d4b-1815-4322-8d41-9627abb804f4)](https://aliexpress.com/item/1005006425749599.html) | For stable outdoor installation.                                     |
 
 
-## 🚀 Installation Guide
+# 🚀 Installation Guide
 
 ### Prerequisites:
 
@@ -74,13 +74,59 @@ Choose any waterproof case for outdoor use. <br>
 | **Supports**  | None required                   |
 | **Infill**    | 20-40%                          |
 | **No Printer?** | [Craftcloud3D](https://craftcloud3d.com) |
+<br>
+<br>
+
+# 🔨 Assemble the Main Board
+
+**Choose your GNSS variant and cooling method first.** Both UM980 and Mosaic-X5 auto-detect in software (see Setup).
+
+### Cooling Options (Pick One)
+| Type                  | Components                          | Steps                                      | Image                                                                 |
+|-----------------------|-------------------------------------|--------------------------------------------|------------------------------------------------------------------------|
+| **Passive** (Recommended for low-power) | Aluminum Heatsink                  | Peel & stick on Pi CPU. No wiring.         | <img alt="cooling" src="https://github.com/airtkey/RTKit/blob/main/pictures/alu_cooling.png"> |
+| **Active** (For hot environments) | 2x 30x30x8mm Fans (5V/3V)          | Mount on lid → Wire to GPIO (Pinout below).| <img alt="cooling" src="https://github.com/airtkey/RTKit/blob/main/pictures/fan_lid.png"> |
+
+**GPIO Fan Pinout** (Active only):  
+[![Pinout](https://github.com/airtkey/UM980-diy-/blob/main/pictures/raspberry-pi-zero-pinout.png)](https://github.com/airtkey/UM980-diy-/blob/main/pictures/raspberry-pi-zero-pinout.png)
+
+---
+
+### Variant 1: UM980 GNSS Board (Compact Stack)
+1. **Stack ETH-Hub on Pi Zero**: Follow Waveshare manual (snap/align headers).
+2. **Attach OTG Adapter**: USB-A to USB-C → Right port on Pi Zero.
+3. **Connect UM980**: Plug board into OTG adapter.
+4. **Mount in Case**: Place assembly inside (ETH-USB-HUB-BOX or 3D-printed).
+5. **Secure**: Screws to fix board.
+6. **Antenna**: Route cable through gland → Screw TNC plug.
+7. **Cooling**: Apply heatsink or attach/connect fans (as chosen).
+
+![Inside View](images/insode.png)
+
+---
+
+### Variant 2: Mosaic-X5 GNSS (Dongle w/ USB-C Cable)
+**⚠️ Note**: Connect Mosaic-X5 **before** fresh OS install. Switching from UM980 requires full reinstall (Mosaic plugged in during setup).
+
+1. **Stack ETH-Hub on Pi Zero**: Follow Waveshare manual.
+2. **Connect Mosaic-X5**: USB-C cable → ETH-Hub USB port (dongle has housing).
+3. **Mount in Case**: ETH-USB-HUB-BOX (Pi+Hub inside); Mosaic external.
+4. **Secure**: Screws for board.
+5. **Antenna**: Route through case gland → Screw to Mosaic.
+6. **Cooling**: Apply heatsink or attach/connect fans.
+
+![Mosaic Setup](images/mosaic-x5-setup.png)
+
+<details>
+<summary>Full Pinout Reference</summary>
+| Pin | Function | Fan Wire |
+|-----|----------|----------|
+| 2/4 | 5V      | Red     |
+| 6   | GND     | Black   |
+| 12  | PWM     | Blue    |
+</details>
 
 
-###  Assemble the Main Board
-![main_board](https://github.com/user-attachments/assets/bd724068-8737-407b-b39b-44f12837400d)
-
-
-(The photo shows the 2W version with pins added by the user)
 
 - Assemble the Ethernet Hub and Raspberry Pi Zero: <br>
 Carefully connect the Ethernet hub and the Raspberry Pi Zero, referring to their respective manuals for detailed instructions.
