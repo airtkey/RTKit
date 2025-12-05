@@ -76,7 +76,7 @@ Choose any waterproof case for outdoor use. <br>
 | **No Printer?** | [Craftcloud3D](https://craftcloud3d.com) |
 
 
-### 2. Assemble the Main Board
+###  Assemble the Main Board
 ![main_board](https://github.com/user-attachments/assets/bd724068-8737-407b-b39b-44f12837400d)
 
 
@@ -103,17 +103,7 @@ Download and flash **Raspberry Pi OS Lite (64-bit)** in the **Debian Bookworm** 
 Insert the SD card into your Raspberry Pi and power it up.  
 Then connect using an SSH client like **PuTTY**:
 
-
-### 3. Update and Reboot
-
-Run the following commands:
-```bash
-sudo apt update && sudo apt upgrade -y && sudo reboot
-```
-
-
-
-### 5. Install the ELT_RTKBase Software
+### 3. Install the ELT_RTKBase Software
 
 Open a terminal (ssh with putty) on the Pi and run **two** times:
 ```bash
