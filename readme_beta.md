@@ -11,88 +11,38 @@ Powered by **ELT_RTKBase** – supports both modules out-of-the-box. Integrates 
 # 📄 Key Components
 
 
-- **Raspberry Pi Zero 2 W** (or WH – where the "H" officially stands for "pre-soldered headers", required if you plan to use active cooling with fans)  
-Example: https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/
-<img width="250" height="174" alt="RASP_PI_ZERO2_WH" src="https://github.com/user-attachments/assets/80a5c816-0b8b-43cc-b90f-1bcd15385148" />
 
-- **Ethernet / USB HUB HAT** <br>
-Example: https://www.waveshare.com/product/raspberry-pi/hats/interface-power/eth-usb-hub-hat-b.htm?___SID=U  
-<img width="250" height="172" alt="eth_hat" src="https://github.com/user-attachments/assets/4e4fce9b-29e2-4b4d-b333-94443c3f791a" />
-
-
-
-- **USB-A (Male) to USB-C (Male) OTG**<br>
-Example: https://aliexpress.com/item/1005002301799896.html
-<img width="229" height="250" alt="usb otg" src="https://github.com/user-attachments/assets/11d13eb0-989e-42bb-b893-fa8c28c4eb26" />
-
-- **Aluminum Heat Sink** (passive cooling) <br>
-Example: https://aliexpress.com/item/1005003796537427.html
-<img width="220" height="119" alt="alu_cooling" src="https://github.com/user-attachments/assets/6523d167-d378-43c2-9a4d-ad2211fe6aa5" />
-
-- **2x Fan 30x30x08 5V/3V** (fan-based cooling)<br>
-Example: https://aliexpress.com/item/32813594463.html
-
-<img width="250" height="251" alt="fan" src="https://github.com/user-attachments/assets/6ebe6f5f-afcc-4d9b-934c-0be6bb307f4d" />
-
-- **Raspberry Pi Micro USB Power Supply** <br>
-Example: https://www.raspberrypi.com/products/micro-usb-power-supply
-<img width="250" height="250" alt="microusb-51v-25a-netzteil-fur-raspberry-pi-3b-3a-3b-2b-zero-zero-2-original-weiss" src="https://github.com/user-attachments/assets/1b6409c5-2805-414e-88f5-0d3cbac5ee8e" />
-
-- **MicroSD card** (at least 8GB,max 32GB, Class 10 recommended)
-<img width="250" height="187" alt="sd_card" src="https://github.com/user-attachments/assets/3d729816-15c2-4d2f-ae81-a434106245fd" />
-<br>
-
-- **Enclosure/Case** (user's choice—see optional section below)
-USB HUB BOX for Raspberry Pi Zero
-Example: https://www.waveshare.com/product/raspberry-pi/hats/interface-power/usb-hub-box.htm
-
-![usb-hub-box-1](https://github.com/user-attachments/assets/8298b05e-f19f-49a6-9e56-77bd25358317)
+| Component                  | Recommendation/Example                                                                 | Image                                                                | Notes                                                                 |
+|----------------------------|----------------------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| **Raspberry Pi Zero 2W**  | [Official Site](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/) (WH preferred) | <img alt="raspizero2w" src="https://github.com/airtkey/RTKit/blob/main/pictures/rasp.png"> | "H" = pre-soldered headers (for fans).                               |
+| **Ethernet/USB Hub**      | Waveshare [ETH/USB Hub HAT](https://www.waveshare.com/product/raspberry-pi/hats/interface-power/eth-usb-hub-hat-b.htm) | <img alt="raspizero2w" src="https://github.com/airtkey/RTKit/blob/main/pictures/eth-usb-hub.png">| HAT: Compact; BOX: For Mosaic-X5 (enclosed GNSS).                    |
+| **USB-A to USB-C OTG**    | [AliExpress](https://aliexpress.com/item/1005002301799896.html) (Male-Male)            |  <img alt="otg" src="https://github.com/airtkey/RTKit/blob/main/pictures/otg.png">  | Required for UM980.                                                  |
+| **Aluminum Heat Sink**    | [Passive Cooling](https://aliexpress.com/item/1005003796537427.html)       |<img alt="cooling" src="https://github.com/airtkey/RTKit/blob/main/pictures/alu_cooling.png"> | Passive cooling.                                                     |
+| **2x Fans (30x30x8mm)**   | [AliExpress 5V/3V](https://aliexpress.com/item/32813594463.html)                      | <img alt="cooling" src="https://github.com/airtkey/RTKit/blob/main/pictures/fan.png">   | Active cooling; connect to GPIO (pinout: [link](https://github.com/airtkey/UM980-diy-/blob/main/pictures/raspberry-pi-zero-pinout.png)). |
+| **Power Supply**          | Official [Micro USB 5.1V/2.5A](https://www.raspberrypi.com/products/micro-usb-power-supply) | <img alt="power" src="https://github.com/airtkey/RTKit/blob/main/pictures/power.png"> | Essential for stable operation.                                      |
+| **MicroSD Card**          | 8-32GB, Class 10 recommended                                                          | <img alt="sd_card" src="https://github.com/airtkey/RTKit/blob/main/pictures/sd_card.png">| For Raspberry Pi OS.                                                 |
+| **Enclosure/Case**        | User's choice → See [Optional Section] |<img alt="case" src="https://github.com/airtkey/RTKit/blob/main/pictures/case.png">|                                     |
 
 
 
+# One of these GNSS modules / GNSS Module Variants
 
-# One of these GNSS modules
-
-- UM980 GNSS Module<br>
-Example: https://witmotion-sensor.com ; https://www.gns-electronics.de/ ; https://aliexpress.com/ 
-<img width="184" height="250" alt="um980" src="https://github.com/user-attachments/assets/c81fc6bb-e565-4fdf-b510-cbfd57153f90" />
-
-- mosaic-X5 RTK GNSS dongle<br>
-Example: [https://witmotion-sensor.com ; https://www.gns-electronics.de/ ; https://aliexpress.com/ ](https://gnss.store/en/septentrio-gnss-modules/356-elt0722.html)
-
-<img width="480" height="219" alt="elt0722" src="https://github.com/user-attachments/assets/68e4da10-c962-4722-997e-c8b09b112b49" />
-
-### GNSS Module Variants
-
-| Module          | Connection             | Enclosure Needs                  | Image/Link                                                                 | Notes                                      |
-|-----------------|------------------------|----------------------------------|----------------------------------------------------------------------------|--------------------------------------------|
-| **UM980**      | USB-A → USB-C OTG Adapter | Separate case (3D/custom)       | [![UM980](images/um980.png)](https://witmotion-sensor.com)                 | Compact board; needs mounting.             |
-| **Mosaic-X5**  | Direct USB Cable (A-Male) | Built-in housing; use ETH-USB-HUB-BOX | [![Mosaic-X5](images/elt0722.png)](https://www.gns-electronics.de/)<br>**(Bild kommt heute)** | Dongle-style; plug-and-play, weatherproof. |
+| Module          | Connection             | Enclosure Needs                  | Image                                                                 | Notes                                     |
+|---------------------|------------------------|----------------------------------|----------------------------------------------------------------------------|--------------------------------------------|
+| **UM980**      | USB-A → USB-C OTG Adapter | Separate case (3D/custom)       | <img alt="um980" src="https://github.com/airtkey/RTKit/blob/main/pictures/um980.png">              | Compact board; needs mounting.             |
+| **Mosaic-X5**  |  USB-C Cable | Built-in housing; use ETH-USB-HUB-BOX | <img alt="um980" src="https://github.com/airtkey/RTKit/blob/main/pictures/mosaicx5.png"> | Dongle-style |
 
 
 
 
 # To complete your setup, you will need the following components:
 
-- GNSS Antenna  Recommend: Beitian BS-800S<br>
-Example: https://www.aliexpress.us/item/3256808846936564.html
-<img width="450" height="200" alt="antenna" src="https://github.com/user-attachments/assets/d12811f0-edee-4f7d-b358-3e0ba1650b81" />
 
-- LM400 cable SMA - TNC<br>
-Example: https://www.aliexpress.us/item/3256808997745754.html <br>
-Connector Compatibility Note: <br>
-The antenna requires a TNC-K connector — not a standard TNC.
-Why this matters:
-Standard TNC and TNC-K have different sizes.
-Recommended Practice:
-To guarantee compatibility, buy the antenna and cable as a bundle from the same supplier.
-<img width="250" height="203" alt="cable" src="https://github.com/user-attachments/assets/951e0954-a507-4edb-8514-e76a244d78f3" />
-
-- A mounting bracket <br>
-Example: https://aliexpress.com/item/1005006425749599.html
-<img width="110" height="110" alt="bracket" src="https://github.com/user-attachments/assets/06ec4d4b-1815-4322-8d41-9627abb804f4" />
-
-
+| Component          | Recommendation/Example                                                                 | Image/Link                                                                 | Notes                                                                 |
+|--------------------|----------------------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| **GNSS Antenna**  | Beitian BS-800S                                                                        | [![Antenna](https://github.com/user-attachments/assets/d12811f0-edee-4f7d-b358-3e0ba1650b81)](https://www.aliexpress.us/item/3256808846936564.html) | Multi-band, skyward view.                                            |
+| **LM400 Cable**   | SMA to TNC-K                                                                           | [![Cable](https://github.com/user-attachments/assets/951e0954-a507-4edb-8514-e76a244d78f3)](https://www.aliexpress.us/item/3256808997745754.html) | **⚠️ TNC-K required (not standard TNC)** – Different sizes! **Buy antenna + cable bundle** from same supplier for compatibility. |
+| **Mounting Bracket** | Pole mount                                                                             | [![Bracket](https://github.com/user-attachments/assets/06ec4d4b-1815-4322-8d41-9627abb804f4)](https://aliexpress.com/item/1005006425749599.html) | For stable outdoor installation.                                     |
 
 
 ## 🚀 Installation Guide
@@ -121,6 +71,28 @@ If you decide to 3D print a case using the provided files:
 - **Infill**: 20-40% is typically sufficient.  
 
 No 3D printer? Services like [Craftcloud3D](https://craftcloud3d.com/) can print and ship custom parts for you.
+
+## 🏠 Optional: Custom Enclosures & 3D Printing
+
+Choose any waterproof case for outdoor use. <br>
+3D-printable files: [/print_files](https://github.com/airtkey/RTKit/tree/main/print_files).
+
+### Enclosure Options
+| Option                | Pros                                      | Image/Link                                                                 |
+|-----------------------|-------------------------------------------|----------------------------------------------------------------------------|
+| **3D-Printed**       | Custom fit, low-cost                      | <img alt="case" src="https://github.com/airtkey/RTKit/blob/main/pictures/case.png">(https://github.com/airtkey/RTKit/tree/main/print_files)  |
+| **Waveshare USB-HUB-BOX** | Waterproof, integrated GNSS support     |<img alt="hub" src="https://github.com/airtkey/RTKit/blob/main/pictures/eth-usb-hub.png"> <br>(https://www.waveshare.com/product/raspberry-pi/hats/interface-power/usb-hub-box.htm) |
+| **Off-the-Shelf**    | Quick, rugged (outdoor-ready)             | [Examples](https://www.amazon.com/s?k=waterproof+electronics+case) |
+
+### 3D Print Settings
+| Parameter     | Recommendation                  |
+|---------------|---------------------------------|
+| **Materials** | PETG, ASA, or PLA+     |
+| **Orientation** | Flat (bottom down)             |
+| **Supports**  | None required                   |
+| **Infill**    | 20-40%                          |
+| **No Printer?** | [Craftcloud3D](https://craftcloud3d.com) |
+
 
 ### 2. Assemble the Main Board
 ![main_board](https://github.com/user-attachments/assets/bd724068-8737-407b-b39b-44f12837400d)
