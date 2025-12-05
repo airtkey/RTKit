@@ -54,24 +54,6 @@ Powered by **ELT_RTKBase** – supports both modules out-of-the-box. Integrates 
 
 
 
-## Optional: Enclosures and 3D Printing
-You can choose any suitable enclosure for your basestation—off-the-shelf waterproof cases work great for outdoor use. For a custom fit, 3D-printable files are available in the [print_files](print_files) folder as an optional starting point. Feel free to modify or design your own!
-
-Here's an example of various enclosure options to inspire you:  
-<img width="1000" height="275" alt="coll" src="https://github.com/user-attachments/assets/96d59010-52d4-4a1a-acc0-da424a6dbc85" />
-![usb-hub-box-1](https://github.com/user-attachments/assets/c040ad8c-0890-4fdf-80f9-a54beb96bc83)
-
-
-*(Image shows a range of colorful, rugged cases suitable for electronics projects.)*
-
-If you decide to 3D print a case using the provided files:  
-- **Recommended Materials**: PETG, ASA, or PLA+ for durability.  
-- **Orientation**: Print flat (bottom side down) for best results.  
-- **Supports**: Not required.  
-- **Infill**: 20-40% is typically sufficient.  
-
-No 3D printer? Services like [Craftcloud3D](https://craftcloud3d.com/) can print and ship custom parts for you.
-
 ## 🏠 Optional: Custom Enclosures & 3D Printing
 
 Choose any waterproof case for outdoor use. <br>
@@ -81,7 +63,7 @@ Choose any waterproof case for outdoor use. <br>
 | Option                | Pros                                      | Image/Link                                                                 |
 |-----------------------|-------------------------------------------|----------------------------------------------------------------------------|
 | **3D-Printed**       | Custom fit, low-cost                      | <img alt="case" src="https://github.com/airtkey/RTKit/blob/main/pictures/case.png">(https://github.com/airtkey/RTKit/tree/main/print_files)  |
-| **Waveshare USB-HUB-BOX** | Waterproof, integrated GNSS support     |<img alt="hub" src="https://github.com/airtkey/RTKit/blob/main/pictures/eth-usb-hub.png"> <br>(https://www.waveshare.com/product/raspberry-pi/hats/interface-power/usb-hub-box.htm) |
+| **Waveshare USB-HUB-BOX** |    |<img alt="hub" src="https://github.com/airtkey/RTKit/blob/main/pictures/hub_box.png"> <br>(https://www.waveshare.com/product/raspberry-pi/hats/interface-power/usb-hub-box.htm) |
 | **Off-the-Shelf**    | Quick, rugged (outdoor-ready)             | [Examples](https://www.amazon.com/s?k=waterproof+electronics+case) |
 
 ### 3D Print Settings
