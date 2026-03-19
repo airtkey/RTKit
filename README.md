@@ -135,7 +135,7 @@ Choose any waterproof case for outdoor use. <br>
 
 
 # Flash the OS
-Download and flash **Raspberry Pi OS Lite (64-bit)** in the **Debian Trixie** version to your microSD card using Raspberry Pi Imager. Enable SSH and Wi-Fi before proceeding. For more detailed information on flashing and setup, please refer to: https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-the-operating-system.
+Download and flash **Raspberry Pi OS Lite (64-bit)** in the **Debian Bookworm** version to your microSD card using Raspberry Pi Imager. Enable SSH and Wi-Fi before proceeding. For more detailed information on flashing and setup, please refer to: https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-the-operating-system.
 
 ### 2. Connect via SSH
 Insert the SD card into your Raspberry Pi and power it up.  
